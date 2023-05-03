@@ -1,0 +1,32 @@
+
+.navBar{
+    border-bottom: 2px solid #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 5%;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoSecondName{
+    margin: 15% 0 0 0;
+}
+.navList{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+}
+.list{
+    width: 100%;
+    justify-content: flex-end;
+}
+.navList .list{
+    display: flex;
+    gap: 5%;
+}
