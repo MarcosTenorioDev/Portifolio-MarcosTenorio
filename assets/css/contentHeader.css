@@ -1,17 +1,20 @@
+#header{
+    height: 100vh;
+}
+
 #contentHeader{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 60%;
     margin: auto;
     position: absolute;
     right: 0;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-
 }
-.title{
+.titleContainer{
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -55,7 +58,7 @@
 .profileButton{
     background-color: #FF296D;
     border-radius: 14px;
-    padding: 6% 15%;
+    padding: 9% 18%;
     font-weight: 700;
     text-align: center;
     font-size: 100%;

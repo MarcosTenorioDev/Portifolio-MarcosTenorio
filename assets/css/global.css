@@ -12,7 +12,6 @@
 
 body{
     width: 100%;
-    height: 3000px; 
     background-color: #01012B;
 }
 
@@ -34,4 +33,9 @@ body{
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     z-index: 1;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 45px;
 }
