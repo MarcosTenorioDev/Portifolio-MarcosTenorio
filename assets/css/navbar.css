@@ -25,10 +25,12 @@
     width: 65%;
     font-size: 1.8vh;
     font-weight: 400;
+    
 }
 .list{
     width: 100%;
     justify-content: flex-end;
+    margin: 0;
 }
 .navList .list{
     display: flex;

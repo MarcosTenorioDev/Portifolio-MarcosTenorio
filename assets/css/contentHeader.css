@@ -24,17 +24,21 @@
     font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: 10px;  
+    margin: 0;
+    
 }
 
 .titleName{
     font-weight: 700;
     font-size: 3rem;
+    margin: 0;
 }
 
 .titleInfo{
     font-weight: 400;
     font-size: 1.2rem;  
     margin-top: 10px;
+    margin: 0;
 }
 
 .info{
