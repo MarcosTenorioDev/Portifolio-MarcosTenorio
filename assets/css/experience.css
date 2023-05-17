@@ -14,35 +14,63 @@
   justify-content: space-evenly;
   gap: 20px;
   width: 60%;
-  height: 50%;
   align-self: center;
   border-radius: 40px 0 40px 0;
 }
 
 .card2{
-  background-color: white;
-  color: black;
+  background-color: #0F1624;
+  box-shadow: 0 0 7px #dadada;
+  color: white;
   border-radius: 20px;
 }
 
 .card-header{
   display: flex;
   justify-content: space-between;
-}
-
-.mb-0{
-  border: 2px solid red
+  margin: 1.5%;
 }
 
 .card-body{
-  color: black;
+  color: white;
 }
 
 .cardExperienceTitle{
-  color: black;
+  color: white;
 }
 .cardExperienceTitleContainer{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  
+}
+
+.card-nav{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #dadada;
+  
+}
+.card-nav-title{
+  margin: 10px 0 30px 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  
+}
+.card-nav-ul{
+  text-align: start;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
+  font-weight: 400;
+  
+  
+
+}
+.card-nav-ul-li{
+  list-style: circle;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
 }
