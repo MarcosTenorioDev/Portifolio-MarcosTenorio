@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 10vh;
-    height: 100vh;
-    
+    height: 100vh; 
 }
 #accordion{
   background-color: #0F1624;
@@ -19,10 +18,12 @@
 }
 
 .card2{
-  background-color: #0F1624;
-  box-shadow: 0 0 7px #dadada;
+  box-shadow: 0 0 7px #ffffff;
   color: white;
   border-radius: 20px;
+  margin: 20px 30px;
+  background-color: #05d9e8d7;
+
 }
 
 .card-header{
@@ -32,11 +33,11 @@
 }
 
 .card-body{
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .cardExperienceTitle{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .cardExperienceTitleContainer{
   width: 100%;
@@ -49,28 +50,49 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 0 7px #dadada;
+  box-shadow: 0 0 10px #000;
+  margin: 0 30px 30px 30px;
+  background-color: #0F1624;
+  border: 2px solid black;
   
 }
 .card-nav-title{
-  margin: 10px 0 30px 0;
+  margin: 10px 20px 30px;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 600;
+  color: white
   
 }
 .card-nav-ul{
   text-align: start;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
   font-weight: 400;
   
-  
-
 }
 .card-nav-ul-li{
   list-style: circle;
   margin-bottom: 10px;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 500;
+  color: white;
+  margin-left: 20px;
+}
+.description-card-nav-ul{
+  margin: 20px 0 5px 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: large;
+}
+
+#warthena{
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+
+#warthena:hover{
+  color: rgba(247, 40, 40, 0.637);
+  transition: 1s;
 }
