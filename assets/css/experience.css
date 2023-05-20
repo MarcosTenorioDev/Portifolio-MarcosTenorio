@@ -38,6 +38,7 @@
 
 .cardExperienceTitle{
   color: rgb(255, 255, 255);
+  margin: 8px;
 }
 .cardExperienceTitleContainer{
   width: 100%;
