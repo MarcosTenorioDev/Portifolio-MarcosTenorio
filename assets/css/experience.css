@@ -62,8 +62,14 @@
   font-family: 'Segoe UI', sans-serif;
   font-weight: 600;
   color: white
-  
+
 }
+
+.arrowColapse{
+  width: 23px;
+  transition: transform 0.4s ease;
+}
+
 .card-nav-ul{
   text-align: start;
   margin: 0;
@@ -97,3 +103,4 @@
   color: rgba(247, 40, 40, 0.637);
   transition: 1s;
 }
+
