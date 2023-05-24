@@ -50,7 +50,6 @@ const observerCallback = function (mutationsList) {
   }
 };
 
-
 // Criando um MutationObserver para observar as mudanças na classe do card1, card2 e card3
 const observer = new MutationObserver(observerCallback);
 

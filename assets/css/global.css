@@ -24,7 +24,13 @@ a{
 }
 
 
-
+.section{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 #home .bg{
     background-image:linear-gradient(to bottom, #01012b00, #01012B 100%), url(../images/background-image.png);

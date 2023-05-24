@@ -38,13 +38,14 @@
 
 .cardExperienceTitle{
   color: rgb(255, 255, 255);
-  margin: 8px;
+  margin: 8px; 
+  display: flex;
+  align-items: center;
 }
 .cardExperienceTitleContainer{
   width: 100%;
   display: flex;
   justify-content: space-around;
-  
 }
 
 .card-nav{
@@ -61,7 +62,7 @@
   margin: 10px 20px 30px;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 600;
-  color: white
+  color: white;
 
 }
 
@@ -102,5 +103,29 @@
 #warthena:hover{
   color: rgba(247, 40, 40, 0.637);
   transition: 1s;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.skillsContent{
+  width: 100%;
+}
+
+.skillsContentUl{
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(max-content, 1fr));
+}
+
+.skillsContentUlLi{
+  margin: 10px;
+  text-align: center; 
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
