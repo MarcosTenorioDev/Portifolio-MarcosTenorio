@@ -1,18 +1,11 @@
-#header{
-    height: 100vh;
-}
 
 #contentHeader{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 60%;
+    height: 100vh;
     margin: auto;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
 }
 .titleContainer{
     display: flex;
@@ -32,6 +25,7 @@
     font-weight: 700;
     font-size: 3rem;
     margin: 0;
+    
 }
 
 .titleInfo{
@@ -51,20 +45,14 @@
 .links{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    width: 100%;
+    gap: 5%;
 }
-.downloadCv{
-    width: 30%;
-    display: flex;
-    justify-content: flex-start;
-}
-
 .profileButton{
     background-color: #FF296D;
     border-radius: 14px;
-    padding: 9% 18%;
+    padding: 13px 25px;
     font-weight: 700;
-    text-align: center;
     font-size: 100%;
 }
 .socialMedia{
@@ -133,4 +121,90 @@
     top: 15%;
     left: 40%;
     z-index: -1;
+}
+
+@media (max-width: 1010px){
+    #contentHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+    }
+    .image {
+        width: 240px; /* Reduzido em 20% */
+        height: 240px; /* Reduzido em 20% */
+        display: flex;
+        justify-content: center;
+        position: relative;
+        order: -1;
+        margin-bottom: 10%;
+    }
+    
+    .effect {
+        width: 240px; /* Reduzido em 20% */
+        position: absolute;
+        left: 0%;
+    }
+    
+    .effect2 {
+        width: 120px; /* Reduzido em 20% */
+        position: absolute;
+        bottom: 12%; /* Reduzido em 20% */
+        left: 19.2%; /* Reduzido em 20% */
+    }
+    
+    .hexagon {
+        width: 240px; /* Reduzido em 20% */
+        height: 207.852px; /* Reduzido em 20% */
+        transform: rotate(30deg);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        position: relative;
+        left: 24%; /* Reduzido em 20% */
+        top: 4%; /* Reduzido em 20% */
+    }
+    
+    .profileImage {
+        width: 240px; /* Reduzido em 20% */
+        height: 240px; /* Reduzido em 20% */
+        transform: rotate(-30deg);
+        position: absolute;
+        top: -4%; /* Reduzido em 20% */
+        right: 4%; /* Reduzido em 20% */
+    }
+    
+    .ellipse1 {
+        position: absolute;
+        border-radius: 50%;
+        width: 400px; /* Reduzido em 20% */
+        height: 400px; /* Reduzido em 20% */
+        bottom: -56%; /* Reduzido em 20% */
+        left: -36%; /* Reduzido em 20% */
+        z-index: -1;
+        opacity: 40%;
+    }
+    
+    .ellipse2 {
+        width: 160px; /* Reduzido em 20% */
+        height: 160px; /* Reduzido em 20% */
+        border-radius: 50%;
+        background: radial-gradient(circle at center, #ff2a6d, rgba(255, 255, 255, 0));
+        box-shadow: 80px -8px 52px rgba(255, 42, 109, 0.5);
+        opacity: 50%;
+        position: absolute;
+        top: 12%; /* Reduzido em 20% */
+        left: 32%; /* Reduzido em 20% */
+        z-index: -1;
+    }
+    .titleContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+    .links{
+        justify-content: center;
+    }
+    
+
 }
