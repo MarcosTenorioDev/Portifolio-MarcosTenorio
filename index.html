@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/contentHeader.css">
     <link rel="stylesheet" href="assets/css/projects.css">
     <link rel="stylesheet" href="assets/css/experience.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+        defer></script>
     <script src="assets/script/script.js" defer></script>
 </head>
 
@@ -37,8 +41,24 @@
                     <li><a href="">Experiência</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="#contentHeader">Sobre mim</a></li>
+                            <li><a href="#projects">Projetos</a></li>
+                            <li><a href="#experience">Experiência</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
             </nav>
-
+            
         </div>
 
         <div id="contentHeader">
@@ -216,78 +236,90 @@
         <h1 class="title">Experiência</h1>
         <div id="accordion">
             <div class="card2">
-              <div class="card-header" id="headingOne">
-                <h3 class="cardExperienceTitleContainer"><span class="cardExperienceTitle">Inox-Tech</span><span class="cardExperienceTitle">Suporte de Ti</span> <span class="cardExperienceTitle">7 meses</span> </h3>
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <img src="assets/images/Arrow.svg" class="arrowColapse" id="arrowColapse1" alt="">
-                  </button>
-              </div>
-          
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    <nav class="card-nav">
-                        <h3 class="card-nav-title">Auxiliar na resolução de: </h3>
-                        <ul class="card-nav-ul">
-                            <li class="card-nav-ul-li">Problemas de rede</li>
-                            <li class="card-nav-ul-li">Sistema SAP</li>
-                            <li class="card-nav-ul-li">Suporte de problemas técnicos</li>
-                            <li class="card-nav-ul-li">Configuração de ambiente Linux;</li>
-                            <li class="card-nav-ul-li">Virtualização de servidores com Hyper-V</li>
-                            <li class="card-nav-ul-li">Active Directory</li>
-                            <li class="card-nav-ul-li">Meraki Dashboard para análise de rede</li>
-                            <li class="card-nav-ul-li">Winbox 64 para Configuração de roteador mikrotik</li>
-                        </ul>
-                    </nav>
+                <div class="card-header" id="headingOne">
+                    <h3 class="cardExperienceTitleContainer"><span class="cardExperienceTitle">Inox-Tech</span><span
+                            class="cardExperienceTitle">Suporte de Ti</span> <span class="cardExperienceTitle">7
+                            meses</span> </h3>
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <img src="assets/images/Arrow.svg" class="arrowColapse" id="arrowColapse1" alt="">
+                    </button>
                 </div>
-              </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <nav class="card-nav">
+                            <h3 class="card-nav-title">Auxiliar na resolução de: </h3>
+                            <ul class="card-nav-ul">
+                                <li class="card-nav-ul-li">Problemas de rede</li>
+                                <li class="card-nav-ul-li">Sistema SAP</li>
+                                <li class="card-nav-ul-li">Suporte de problemas técnicos</li>
+                                <li class="card-nav-ul-li">Configuração de ambiente Linux;</li>
+                                <li class="card-nav-ul-li">Virtualização de servidores com Hyper-V</li>
+                                <li class="card-nav-ul-li">Active Directory</li>
+                                <li class="card-nav-ul-li">Meraki Dashboard para análise de rede</li>
+                                <li class="card-nav-ul-li">Winbox 64 para Configuração de roteador mikrotik</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="card2">
-              <div class="card-header" id="headingTwo">
-                <h3 class="cardExperienceTitleContainer"><span class="cardExperienceTitle">Porto digital</span><span class="cardExperienceTitle">Residência Kick-Off</span> <span class="cardExperienceTitle">5 meses</span> </h3>
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <img src="assets/images/Arrow.svg" class="arrowColapse" id="arrowColapse2" alt="">
-                  </button>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    <nav class="card-nav">
-                        <h3 class="card-nav-title">Desenvolvimento de uma solução tecnológica para adesão dos esportes na cidade do Recife:</h3>
-                        <ul class="card-nav-ul">
-                            <li class="card-nav-ul-li">Atuação com metodologias ágeis;</li>
-                            <li class="card-nav-ul-li">Scrum;</li>
-                            <li class="card-nav-ul-li">Kanban;</li>
-                            <li class="card-nav-ul-li">Prototipação de software no FIGMA</li>
-                            <li class="card-nav-ul-li">Documentação de requisitos de software</li>
-                            <li class="card-nav-ul-li">Trabalho em equipe</li>
-                        </ul>
-                        <p class="description-card-nav-ul">Co-fundador e desenvolvedor da startup <a target="_blank" id="warthena" href="https://www.linkedin.com/in/equipe-warthena-955284275/">WARTHENA</a></p>
-                    </nav>
+                <div class="card-header" id="headingTwo">
+                    <h3 class="cardExperienceTitleContainer"><span class="cardExperienceTitle">Porto digital</span><span
+                            class="cardExperienceTitle">Residência Kick-Off</span> <span class="cardExperienceTitle">5
+                            meses</span> </h3>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <img src="assets/images/Arrow.svg" class="arrowColapse" id="arrowColapse2" alt="">
+                    </button>
                 </div>
-              </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <nav class="card-nav">
+                            <h3 class="card-nav-title">Desenvolvimento de uma solução tecnológica para adesão dos
+                                esportes na cidade do Recife:</h3>
+                            <ul class="card-nav-ul">
+                                <li class="card-nav-ul-li">Atuação com metodologias ágeis;</li>
+                                <li class="card-nav-ul-li">Scrum;</li>
+                                <li class="card-nav-ul-li">Kanban;</li>
+                                <li class="card-nav-ul-li">Prototipação de software no FIGMA</li>
+                                <li class="card-nav-ul-li">Documentação de requisitos de software</li>
+                                <li class="card-nav-ul-li">Trabalho em equipe</li>
+                            </ul>
+                            <p class="description-card-nav-ul">Co-fundador e desenvolvedor da startup <a target="_blank"
+                                    id="warthena"
+                                    href="https://www.linkedin.com/in/equipe-warthena-955284275/">WARTHENA</a></p>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="card2">
-              <div class="card-header" id="headingThree">
-                <h3 class="cardExperienceTitleContainer"><span class="cardExperienceTitle">Ferreira Costa</span><span class="cardExperienceTitle">Residência de software</span> <span class="cardExperienceTitle">Atual</span> </h3>
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <img src="assets/images/Arrow.svg" class="arrowColapse" id="arrowColapse3" alt="">
-                  </button>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                    <nav class="card-nav">
-                        <h3 class="card-nav-title">Desenvolvimento de uma aplicação Front-End</h3>
-                        <ul class="card-nav-ul">
-                            <li class="card-nav-ul-li">OMS (Order Managment System)</li>
-                            <li class="card-nav-ul-li">React.js</li>
-                            <li class="card-nav-ul-li">API REST</li>
-                            <li class="card-nav-ul-li">Integração de sistemas</li>
-                            <li class="card-nav-ul-li">Trabalho em equipe</li>
-                            <li class="card-nav-ul-li">metodologias ágeis</li>
-                            <li class="card-nav-ul-li">Documentação de requisitos de software</li>
-                        </ul>
-                    </nav>
+                <div class="card-header" id="headingThree">
+                    <h3 class="cardExperienceTitleContainer"><span class="cardExperienceTitle">Ferreira
+                            Costa</span><span class="cardExperienceTitle">Residência de software</span> <span
+                            class="cardExperienceTitle">Atual</span> </h3>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <img src="assets/images/Arrow.svg" class="arrowColapse" id="arrowColapse3" alt="">
+                    </button>
                 </div>
-              </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <nav class="card-nav">
+                            <h3 class="card-nav-title">Desenvolvimento de uma aplicação Front-End</h3>
+                            <ul class="card-nav-ul">
+                                <li class="card-nav-ul-li">OMS (Order Managment System)</li>
+                                <li class="card-nav-ul-li">React.js</li>
+                                <li class="card-nav-ul-li">API REST</li>
+                                <li class="card-nav-ul-li">Integração de sistemas</li>
+                                <li class="card-nav-ul-li">Trabalho em equipe</li>
+                                <li class="card-nav-ul-li">metodologias ágeis</li>
+                                <li class="card-nav-ul-li">Documentação de requisitos de software</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="skills">
@@ -312,8 +344,8 @@
             </nav>
         </div>
         </div>
-        
-        
+
+
 
 
     </section>

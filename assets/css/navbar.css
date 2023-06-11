@@ -1,6 +1,5 @@
 
 .navBar{
-    border-bottom: 2px solid #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +14,9 @@
     justify-content: space-between;
     font-size: 2.6vh;
     font-weight: 700;
+}
+#menu{
+    display: none;
 }
 
 .logoSecondName{
@@ -36,4 +38,102 @@
 .navList .list{
     display: flex;
     gap: 15%;
+}
+
+@media (max-width: 1010px) {
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 13px 5%;
+        width: 100%;
+        height: 100px;
+    }
+    .navList .list{
+        display: none;
+    }
+    .navList{
+        display: flex;
+        align-items: flex-end;
+        font-size: 1.8vh;
+        font-weight: 400;
+        width: auto;
+        
+    }
+      #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 50px;
+        padding-top: 28px;
+      }
+      #menu-bar {
+        width: 37px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .bar {
+        height: 5px;
+        width: 100%;
+        background-color: #ffffff;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        
+      }
+      
+      #bar1 {
+        transform: translateY(-4px);
+      }
+      
+      #bar3 {
+        transform: translateY(4px);
+      }
+      
+      .nav {
+        transition: 0.3s ease;
+        display: none;
+      }
+      
+      .nav ul {
+        padding: 0 22px;
+      }
+      
+      .nav li {
+        list-style: none;
+        padding: 12px 0;
+      }
+      
+      .nav li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      
+      .nav li a:hover {
+        font-weight: bold;
+      }
+      
+      .change {
+        display: flex;
+      }
+      
+      .change .bar {
+        background-color: white;
+      }
+      
+      .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+      }
+      
+      .change #bar2 {
+        opacity: 0;
+      }
+      
+      .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+      }
+      
 }
