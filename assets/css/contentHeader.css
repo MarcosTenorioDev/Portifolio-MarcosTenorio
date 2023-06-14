@@ -208,3 +208,113 @@
     
 
 }
+
+@media(max-width: 540px){
+    .image {
+        width: 168px; /* Reduzido em 30% */
+        height: 168px; /* Reduzido em 30% */
+        display: flex;
+        justify-content: center;
+        position: relative;
+        order: -1;
+        margin-bottom: 7%; /* Reduzido em 30% */
+    }
+    
+    .effect {
+        width: 168px; /* Reduzido em 30% */
+        position: absolute;
+        left: 0%;
+    }
+    
+    .effect2 {
+        width: 84px; /* Reduzido em 30% */
+        position: absolute;
+        bottom: 8.4%; /* Reduzido em 30% */
+        left: 13.44%; /* Reduzido em 30% */
+    }
+    
+    .hexagon {
+        width: 168px; /* Reduzido em 30% */
+        height: 145.497px; /* Reduzido em 30% */
+        transform: rotate(30deg);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        position: relative;
+        left: 16.8%; /* Reduzido em 30% */
+        top: 3.6%; /* Reduzido em 30% */
+    }
+    
+    .profileImage {
+        width: 190px;
+        height: 190px; 
+        transform: rotate(-30deg);
+        position: absolute;
+        top: -3.6%; /* Reduzido em 30% */
+        right: 3.6%; /* Reduzido em 30% */
+    }
+    
+    .ellipse1 {
+        position: absolute;
+        border-radius: 50%;
+        width: 280px; /* Reduzido em 30% */
+        height: 280px; /* Reduzido em 30% */
+        bottom: -39.2%; /* Reduzido em 30% */
+        left: -25.2%; /* Reduzido em 30% */
+        z-index: -1;
+        opacity: 40%;
+    }
+    
+    .ellipse2 {
+        width: 112px; /* Reduzido em 30% */
+        height: 112px; /* Reduzido em 30% */
+        border-radius: 50%;
+        background: radial-gradient(circle at center, #ff2a6d, rgba(255, 255, 255, 0));
+        box-shadow: 56.4px -5.6px 36.4px rgba(255, 42, 109, 0.5);
+        opacity: 50%;
+        position: absolute;
+        top: 8.4%; /* Reduzido em 30% */
+        left: 22.4%; /* Reduzido em 30% */
+        z-index: -1;
+    }
+    
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .profileButton{
+        background-color: #FF296D;
+        border-radius: 14px;
+        padding: 13px 25px;
+        font-weight: 700;
+        font-size: 100%;
+    }
+    .socialMedia a{
+        display: flex;
+        justify-content: center;
+    }
+    .titleName{
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    .titleInfo{
+        font-weight: 400;
+        font-size: 0.8rem;  
+        margin-top: 10px;
+        margin: 0;
+    }
+
+    .titleIntro{
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: 4px;  
+        margin: 0;
+        
+    }
+    
+
+}
+
+
+
