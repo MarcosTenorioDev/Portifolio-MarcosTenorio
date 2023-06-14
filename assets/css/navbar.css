@@ -66,6 +66,7 @@
         align-items: flex-end;
         gap: 50px;
         padding-top: 28px;
+        z-index: 2;
       }
       #menu-bar {
         width: 37px;
@@ -95,6 +96,9 @@
       .nav {
         transition: 0.3s ease;
         display: none;
+        background-color: #0F1624;
+        border: 1px solid #c9c9c9;
+        border-radius: 10px;
       }
       
       .nav ul {
@@ -135,5 +139,20 @@
       .change #bar3 {
         transform: translateY(-6px) rotateZ(45deg);
       }
+      .logo{
+      display: flex;
+      justify-content: space-between;
+      font-size: 2.2vh;
+      font-weight: 700;
+      align-items: center;
+      height: 100%;
+    }
+
+    .logoSecondName{
+      margin-top: 25px;
+    }
+    .logoFirstName{
+      margin-bottom: 25px;
+    }
       
 }
