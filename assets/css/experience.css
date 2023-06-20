@@ -11,7 +11,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 20px;
-  width: 60%;
+  width: 100%;
+  max-width: 980px;
   align-self: center;
   border-radius: 40px 0 40px 0;
 }
@@ -40,6 +41,7 @@
   margin: 8px; 
   display: flex;
   align-items: center;
+  font-size: 1em;
 }
 .cardExperienceTitleContainer{
   width: 100%;
@@ -74,8 +76,8 @@
   text-align: start;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
   font-weight: 400;
+  
   
 }
 .card-nav-ul-li{
@@ -84,17 +86,18 @@
   font-family: 'Segoe UI', sans-serif;
   font-weight: 500;
   color: white;
-  margin-left: 20px;
+  margin-right: 20px;
+
 }
 .description-card-nav-ul{
-  margin: 20px 0 5px 0;
+  margin: 5px;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 700;
   color: white;
   font-size: large;
 }
 
-#warthena{
+#FC{
   text-decoration: underline;
   letter-spacing: 3px;
 }
@@ -115,7 +118,7 @@
 }
 
 .skillsContentUl{
-  margin: 0;
+  margin: 0px 0px 0px 20px;
   display: grid;
   grid-template-columns: repeat(3, minmax(max-content, 1fr));
 }
@@ -129,3 +132,48 @@
   font-size: larger;
 }
 
+@media (max-width: 1010px) {
+  #accordion{
+    background-color: #0F1624;
+    box-shadow: 0 0 7px #dadada;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    max-width: 980px;
+    align-self: center;
+    border-radius: 40px 0 40px 0;
+  }
+  .card2{
+    border-radius: 25px;
+    margin: 0;
+
+  }
+  .cardExperienceTitle{
+    color: rgb(255, 255, 255);
+    margin: 10px; 
+    display: flex;
+    align-items: center;
+    font-size: 0.7em ;
+  }
+  .cardExperienceTitleContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card-nav-title{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 1.2em;
+  
+  }
+  .card-nav-ul-li{
+    list-style: circle;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    color: white;
+  }
+}
